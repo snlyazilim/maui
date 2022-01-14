@@ -4,21 +4,28 @@ using Microsoft.Maui.Graphics;
 
 namespace Microsoft.Maui.Controls
 {
+	/// <include file="../../docs/Microsoft.Maui.Controls/SwipeDirection.xml" path="Type[@FullName='Microsoft.Maui.Controls.SwipeDirection']/Docs" />
 	[Flags]
 	public enum SwipeDirection
 	{
+		/// <include file="../../docs/Microsoft.Maui.Controls/SwipeDirection.xml" path="//Member[@MemberName='Right']/Docs" />
 		Right = 1,
+		/// <include file="../../docs/Microsoft.Maui.Controls/SwipeDirection.xml" path="//Member[@MemberName='Left']/Docs" />
 		Left = 2,
+		/// <include file="../../docs/Microsoft.Maui.Controls/SwipeDirection.xml" path="//Member[@MemberName='Up']/Docs" />
 		Up = 4,
+		/// <include file="../../docs/Microsoft.Maui.Controls/SwipeDirection.xml" path="//Member[@MemberName='Down']/Docs" />
 		Down = 8
 	}
 }
 
 namespace Microsoft.Maui.Controls.Internals
 {
+	/// <include file="../../docs/Microsoft.Maui.Controls.Internals/SwipeDirectionHelper.xml" path="Type[@FullName='Microsoft.Maui.Controls.Internals.SwipeDirectionHelper']/Docs" />
 	[EditorBrowsable(EditorBrowsableState.Never)]
 	public static class SwipeDirectionHelper
 	{
+		/// <include file="../../docs/Microsoft.Maui.Controls.Internals/SwipeDirectionHelper.xml" path="//Member[@MemberName='GetSwipeDirection']/Docs" />
 		public static SwipeDirection GetSwipeDirection(Point initialPoint, Point endPoint)
 		{
 			var angle = GetAngleFromPoints(initialPoint.X, initialPoint.Y, endPoint.X, endPoint.Y);
